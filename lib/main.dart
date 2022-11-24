@@ -31,7 +31,7 @@ void updateWidget() {
 }
 
 Future<bool> getParkingData() async {
-  const parkingLot = ['中商', '中技', '中正'];
+  const parkingLot = ['中正', '中商', '中技'];
 
   HomeWidget.saveWidgetData<String>('refresh', " ◴ ");
   updateWidget();
@@ -66,7 +66,7 @@ Future<bool> getParkingData() async {
 int getAllParkingAmount(String parkingLot, String data) {
   return int.parse(data
       .split(parkingLot)[1]
-      .split("partAll partHide")[2]
+      .split("partIn partHide")[1]
       .split('>')[1]
       .split('<')[0]);
 }
@@ -74,7 +74,7 @@ int getAllParkingAmount(String parkingLot, String data) {
 int getRemainingParkingAmount(String parkingLot, String data) {
   return int.parse(data
       .split(parkingLot)[1]
-      .split("tableShowHide('partAll');")[4]
+      .split("tableShowHide('partIn');")[3]
       .split('">')[1]
       .split('<')[0]);
 }

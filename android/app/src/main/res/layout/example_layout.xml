@@ -60,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center"
                 android:layout_marginHorizontal="10dp"
-                android:text="中商"
+                android:includeFontPadding="false"
+                android:text="中正"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
@@ -118,7 +119,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center"
                 android:layout_marginHorizontal="10dp"
-                android:text="中技"
+                android:text="中商"
+                android:includeFontPadding="false"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
@@ -176,7 +178,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center"
                 android:layout_marginHorizontal="10dp"
-                android:text="中正"
+                android:text="中技"
+                android:includeFontPadding="false"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
